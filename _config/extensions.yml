@@ -1,0 +1,6 @@
+---
+Name: maximages-extensions
+---
+Page:
+  extensions:
+    - ObjectImagesExtension

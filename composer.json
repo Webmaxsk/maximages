@@ -1,0 +1,23 @@
+{
+	"name": "webmaxsk/maximages",
+	"description": "Simple image gallery for any dataobject",
+	"type": "silverstripe-module",
+	"license": "BSD-3-Clause",
+	"keywords": ["silverstripe", "gallery", "photos", "images"],
+	"authors": [
+	{
+		"name": "Pali Ondras",
+		"email": "ondras@webmax.sk"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "3.1.*",
+		"silverstripe/cms": "3.1.*",
+		"bummzack/sortablefile": "*"
+	},
+	"suggest": {
+		"heyday/silverstripe-optimisedimage": "*",
+		"jonom/focuspoint": "*"
+	}
+}
