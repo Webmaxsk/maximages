@@ -33,6 +33,8 @@ class ObjectImagesExtension extends DataExtension {
 		$fields->addFieldToTab('Root.Images', HeaderField::create('ImagesNotice', $message)->setHeadingLevel(4));
 		$fields->addFieldToTab('Root.Images', $dropdownSorter);
         $fields->addFieldToTab('Root.Images', $imageField);
+        
+        $fields->fieldByName('Root.Images')->setTitle(_t("Object.IMAGESTAB", "Images"));
 	}
 	
 	public function SortedImages(){
