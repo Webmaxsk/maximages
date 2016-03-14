@@ -7,3 +7,5 @@ sk:
     IMAGESUPLOADHEADINGWRONG: "<span style='color: red'>Zoradenie obrázkov ťahaním miniatúr (SortOrder) nie je povolené. Chýba modul SortableUploadField.</span>"
     IMAGESUPLOADLABEL: Obrázky
     IMAGESUPLOADLIMIT: 'Max. počet obrázkov: %s'
+    IMAGETAB: Obrázok
+    IMAGEUPLOADLABEL: Obrázok
