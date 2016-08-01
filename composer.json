@@ -12,8 +12,8 @@
 	],
 	"require":
 	{
-		"silverstripe/framework": "3.2.*",
-		"silverstripe/cms": "3.2.*",
+		"silverstripe/framework": "3.4.*",
+		"silverstripe/cms": "3.4.*",
 		"bummzack/sortablefile": "*"
 	},
 	"suggest": {
