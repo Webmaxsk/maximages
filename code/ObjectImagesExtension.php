@@ -19,8 +19,9 @@ class ObjectImagesExtension extends DataExtension {
 	
 	public function updateCMSFields(FieldList $fields) {      
 		 // Use SortableUploadField instead of UploadField!
-		$owner = $this->owner;
+		$imagesTab = $fields->findOrMakeTab('Root.Images');
 
+		$owner = $this->owner;
 		if ($owner::config()->allow_images) {
 			$limit = $owner::config()->images_count;
 
@@ -31,15 +32,13 @@ class ObjectImagesExtension extends DataExtension {
 			$imageField->setFolderName('Uploads/'.$this->owner->ClassName.'/'.$this->owner->ID);
 
 			if ($limit==1) {
+				$imagesTab->setTitle(_t("Object.IMAGETAB", "Images"));
 				$imageField->setTitle(_t("Object.IMAGEUPLOADLABEL", "Image"));
-
-				$fields->addFieldToTab('Root',Tab::create('Images',_t("Object.IMAGETAB", "Image")));
 			}
 			else {
+				$imagesTab->setTitle(_t("Object.IMAGESTAB", "Images"));
 				$imageField->setTitle(_t("Object.IMAGESUPLOADLABEL", "Images"));
 				$imageField->setDescription(sprintf(_t("Object.IMAGESUPLOADLIMIT","Images count limit: %s"), $limit));
-
-				$fields->addFieldToTab('Root',Tab::create('Images',_t("Object.IMAGESTAB", "Images")));
 
 				if ($this->owner->Sorter == "SortOrder")  {
 					$message = (class_exists("SortableUploadField")) ? _t("Object.IMAGESUPLOADHEADING", "<span style='color: green'>Sort images by draging thumbnail</span>") : _t("Object.IMAGESUPLOADHEADINGWRONG", "<span style='color: red'>Sorting images by draging thumbnails (SortOrder) not allowed. Missing module SortabeUploadField.</span>"); 
@@ -55,6 +54,8 @@ class ObjectImagesExtension extends DataExtension {
 
 			$fields->addFieldToTab('Root.Images', $imageField);
 		}
+		else
+			$fields->removeByName($imagesTab->Name);
 	}
 
 	public function SortedImages() {
