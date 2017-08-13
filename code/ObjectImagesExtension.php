@@ -4,20 +4,20 @@ class ObjectImagesExtension extends DataExtension {
 
 	private static $allow_images = true;
 	private static $images_count = 20;
-	
+
 	private static $db = array(
 		'Sorter' => 'Enum("SortOrder, Title, Name, ID")'
 	);
-	
+
 	private static $many_many = array(
 		'Images' => 'Image'
 	);
-	
+
 	private static $many_many_extraFields = array(
 		'Images' => array('SortOrder' => 'Int')
 	);
-	
-	public function updateCMSFields(FieldList $fields) {      
+
+	public function updateCMSFields(FieldList $fields) {
 		 // Use SortableUploadField instead of UploadField!
 		$imagesTab = $fields->findOrMakeTab('Root.Images');
 
@@ -41,7 +41,7 @@ class ObjectImagesExtension extends DataExtension {
 				$imageField->setDescription(sprintf(_t("Object.IMAGESUPLOADLIMIT","Images count limit: %s"), $limit));
 
 				if ($this->owner->Sorter == "SortOrder")  {
-					$message = (class_exists("SortableUploadField")) ? _t("Object.IMAGESUPLOADHEADING", "<span style='color: green'>Sort images by draging thumbnail</span>") : _t("Object.IMAGESUPLOADHEADINGWRONG", "<span style='color: red'>Sorting images by draging thumbnails (SortOrder) not allowed. Missing module SortabeUploadField.</span>"); 
+					$message = (class_exists("SortableUploadField")) ? _t("Object.IMAGESUPLOADHEADING", "<span style='color: green'>Sort images by draging thumbnail</span>") : _t("Object.IMAGESUPLOADHEADINGWRONG", "<span style='color: red'>Sorting images by draging thumbnails (SortOrder) not allowed. Missing module SortabeUploadField.</span>");
 				} else {
 					$message = _t("Object.IMAGESSORTERNOTICE", "Correct image sorting is visible on frontend only (if Sort by = Title, ID)");
 				}
