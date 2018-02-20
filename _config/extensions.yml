@@ -3,4 +3,4 @@ Name: maximages-extensions
 ---
 Page:
   extensions:
-    - ObjectImagesExtension
+    - Webmaxsk\Model\ObjectImagesExtension\ObjectImagesExtension
