@@ -1,13 +1,13 @@
 <?php
 
-use SilverStripe\Core\Extension;
+use SilverStripe\ORM\DataExtension;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\literalField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
-class ObjectImagesExtension extends Extension {
+class ObjectImagesExtension extends DataExtension {
 
 	private static $allow_images = true;
 
