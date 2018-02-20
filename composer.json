@@ -5,19 +5,22 @@
 	"license": "BSD-3-Clause",
 	"keywords": ["silverstripe", "gallery", "photos", "images"],
 	"authors": [
-	{
-		"name": "Pali Ondras",
-		"email": "ondras@webmax.sk"
-	}
+        {
+            "name": "Pali Ondras",
+            "email": "ondras@webmax.sk"
+        },
+        {
+            "name": "Rastislav Brandobur",
+            "email": "brandobur@webmax.sk"
+        }
 	],
 	"require":
 	{
-		"silverstripe/framework": "3.*",
-		"silverstripe/cms": "3.*",
-		"bummzack/sortablefile": "*"
+        "silverstripe/framework": "^4"
 	},
 	"suggest": {
 		"heyday/silverstripe-optimisedimage": "*",
-		"jonom/focuspoint": "*"
+		"jonom/focuspoint": "*",
+        "bummzack/sortablefile": "*"
 	}
 }
