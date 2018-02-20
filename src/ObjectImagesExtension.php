@@ -1,10 +1,12 @@
 <?php
 
+namespace Webmaxsk\Model\ObjectImagesExtension;
+
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\Forms\literalField;
+use SilverStripe\Forms\LiteralField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 
 class ObjectImagesExtension extends DataExtension {
