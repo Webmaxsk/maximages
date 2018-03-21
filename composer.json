@@ -16,11 +16,11 @@
 	],
 	"require":
 	{
-        "silverstripe/framework": "^4"
+        "silverstripe/framework": "^4.1",
+        "bummzack/sortablefile": "^2.0"
 	},
 	"suggest": {
 		"heyday/silverstripe-optimisedimage": "*",
-		"jonom/focuspoint": "*",
-        "bummzack/sortablefile": "*"
+		"jonom/focuspoint": "*"
 	}
 }
