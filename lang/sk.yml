@@ -4,7 +4,6 @@ sk:
     IMAGESSORTERNOTICE: "Ak sa obrázky zoraďujú podľa 'Title' alebo 'ID', tak korektné usporiadanie je viditeľné iba na FrontEnde."
     IMAGESTAB: Obrázky
     IMAGESUPLOADHEADING: "<span style='color: green'>Obrázky môžete preusporiadať ťahaním miniatúr. Pozn.: Stránku následne netreba ukladať.</span>"
-    IMAGESUPLOADHEADINGWRONG: "<span style='color: red'>Zoradenie obrázkov ťahaním miniatúr (SortOrder) nie je povolené. Chýba modul SortableUploadField.</span>"
     IMAGESUPLOADLABEL: Obrázky
     IMAGESUPLOADLIMIT: 'Max. počet obrázkov: %s'
     IMAGETAB: Obrázok

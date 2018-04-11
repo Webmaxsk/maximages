@@ -1,10 +1,10 @@
 {
-	"name": "webmaxsk/maximages",
-	"description": "Simple image gallery for any dataobject",
-	"type": "silverstripe-module",
-	"license": "BSD-3-Clause",
-	"keywords": ["silverstripe", "gallery", "photos", "images"],
-	"authors": [
+    "name": "webmaxsk/maximages",
+    "description": "Simple image gallery for any dataobject",
+    "type": "silverstripe-module",
+    "license": "BSD-3-Clause",
+    "keywords": ["silverstripe", "gallery", "photos", "images"],
+    "authors": [
         {
             "name": "Pali Ondras",
             "email": "ondras@webmax.sk"
@@ -13,14 +13,13 @@
             "name": "Rastislav Brandobur",
             "email": "brandobur@webmax.sk"
         }
-	],
-	"require":
-	{
-        "silverstripe/framework": "^4.1",
+    ],
+    "require": {
+        "silverstripe/framework": "^4.0",
         "bummzack/sortablefile": "^2.0"
-	},
-	"suggest": {
-		"heyday/silverstripe-optimisedimage": "*",
-		"jonom/focuspoint": "*"
-	}
+    },
+    "suggest": {
+        "heyday/silverstripe-optimisedimage": "*",
+        "jonom/focuspoint": "*"
+    }
 }

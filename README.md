@@ -1,20 +1,22 @@
 # maximages
-Images for any data object 
+Images for any data object
 
 ## Installation
 ```bash
 composer require "webmaxsk/maximages:*"
 ```
 
-You can add images to any Page via CMS. You can disable images for any Page subclass by adding config to mysite/_config.php:
+You can add images to any Page via CMS. You can disable images for any Page subclass by adding config to _config/config.yml:
 ```php
-Blog::config()->allow_images = false;
-Calendar::config()->allow_images = false;
-CalendarEvent::config()->allow_images = false;
-ErrorPage::config()->allow_images = false;
-RedirectorPage::config()->allow_images = false;
-UserDefinedForm::config()->allow_images = false;
-VirtualPage::config()->allow_images = false;
+SilverStripe\ErrorPage\ErrorPage:
+  images:
+    enabled: false
+SilverStripe\CMS\Model\VirtualPage:
+  images:
+    enabled: false
+SilverStripe\CMS\Model\RedirectorPage:
+  images:
+    enabled: false
 ```
 
 You can add images to any DataObject too, just extend DataObject with ObjectImagesExtension.

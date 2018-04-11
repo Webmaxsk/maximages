@@ -1,6 +1,6 @@
 ---
-Name: maximages-extensions
+Name: maximages_extensions
 ---
 Page:
   extensions:
-    - Webmaxsk\Model\ObjectImagesExtension\ObjectImagesExtension
+    - Webmaxsk\Maximages\ObjectImagesExtension
