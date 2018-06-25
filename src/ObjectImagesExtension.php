@@ -55,7 +55,7 @@ class ObjectImagesExtension extends DataExtension {
                 $imageField->setDescription(sprintf(_t('Object.IMAGESUPLOADLIMIT','Images count limit: %s'), $limit));
 
                 if ($this->owner->Sorter == 'SortOrder')
-                    $message = _t('Object.IMAGESUPLOADHEADING', '<span style="color: green">Sort images by draging thumbnail</span>');
+                    $message = _t('Object.IMAGESUPLOADHEADING', '<span style="color: green">Sort images by dragging thumbnail</span>');
                 else
                     $message = _t('Object.IMAGESSORTERNOTICE', 'Correct image sorting is visible on frontend only (if Sort by = Title, ID)');
 
