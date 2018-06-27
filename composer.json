@@ -6,12 +6,12 @@
     "keywords": ["silverstripe", "gallery", "photos", "images"],
     "authors": [
         {
-             "name": "Pali Ondras",
-             "email": "ondras@webmax.sk"
+            "name": "Pali Ondras",
+            "email": "ondras@webmax.sk"
         },
         {
-             "name": "Rastislav Brandobur",
-             "email": "brandobur@webmax.sk"
+            "name": "Rastislav Brandobur",
+            "email": "brandobur@webmax.sk"
         }
     ],
     "require": {
@@ -19,8 +19,8 @@
         "bummzack/sortablefile": "^2.0"
     },
     "suggest": {
-     "heyday/silverstripe-optimisedimage": "*",
-     "jonom/focuspoint": "*"
+        "heyday/silverstripe-optimisedimage": "*",
+        "jonom/focuspoint": "*"
     },
     "autoload": {
      "psr-4": {
