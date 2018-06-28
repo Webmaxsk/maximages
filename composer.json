@@ -1,7 +1,7 @@
 {
     "name": "webmaxsk/maximages",
     "description": "Simple image gallery for any dataobject",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "keywords": ["silverstripe", "gallery", "photos", "images"],
     "authors": [
@@ -21,5 +21,10 @@
     "suggest": {
         "heyday/silverstripe-optimisedimage": "*",
         "jonom/focuspoint": "*"
+    },
+    "autoload": {
+     "psr-4": {
+      "Webmaxsk\\MaxImages\\": "src/"
+     }
     }
 }

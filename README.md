@@ -19,6 +19,15 @@ SilverStripe\CMS\Model\RedirectorPage:
     enabled: false
 ```
 
+The maximum number of images can be also specified in the config using the following syntax (default is 20 for a page):
+
+```php
+SilverStripe\Blog\Model\BlogPost:
+  images:
+    count: 50
+```
+
+
 You can add images to any DataObject too, just extend DataObject with ObjectImagesExtension.
 
 ## Usage
